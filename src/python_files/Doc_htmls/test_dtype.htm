@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <h1 style="font: 100;font-family: 'Courier New', Courier, monospace;">numpy.dtype</h1>
+     <p>
+          <span style="font-family: 'Courier New', Courier, monospace;">
+               numpy.dtype(<i>obj, align=False, copy=False</i>)</span>
+          <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dtype.html?highlight=dtype#numpy.dtype"> Link to Documentation</a>
+     </p>
+     <p>
+     Create an array
+     <pre>
+     Parameters:
+               obj: Object to be converted to a data type object.
+               align: <i>bool, optional</i>
+               copy: <i>bool, optional</i>
+     </pre>
+     </p>
+     <p>
+          Example: </br></br>
+          Using array-scalar type:
+          <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+          <p> 
+               <pre>
+     <span style="color: darkred;">>>></span> np.dtype(np.int16)
+     dtype('int16')
+               </pre> 
+          </p>
+
+          </div>
+          Structured type, one field name 'f1', containing int16:
+          <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+          <p> 
+               <pre>
+     <span style="color: darkred;">>>></span> np.dtype([('f1', np.int16)])
+     dtype([('f1', '&lti2')])
+               </pre> 
+          </p>
+          </div>
+     </p>
+</body>
+</html>

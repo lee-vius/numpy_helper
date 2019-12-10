@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <h1 style="font: 100;font-family: 'Courier New', Courier, monospace;">numpy.zeros</h1>
+     <p>
+          <span style="font-family: 'Courier New', Courier, monospace;">
+               numpy.zeros(<i>shape, dtype=float, order='C'</i>)</span>
+          <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html?highlight=zeros#numpy.zeros"> Link to Documentation</a>
+     </p>
+     <p>
+          Return a new array of given shape and type, filled with zeros.
+     <pre>
+     Parameters:
+               shape: <i>int or tuple of ints</i>
+               dtype: <i>data-type, optional</i>
+               order: <i>{'C', 'F'}, optional, default: C</i>
+     Returns:
+               out: <i>ndarray</i>
+     </pre>
+     </p>
+     <p>
+          Example: </br></br>
+          <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+          <p> 
+               <pre>
+     <span style="color: darkred;">>>></span> np.zeros(5)
+     array([ 0.,  0.,  0.,  0.,  0.])
+               </pre> 
+          </p>
+          </div>
+
+          <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+          <p> 
+               <pre>
+     <span style="color: darkred;">>>></span> np.zeros((5,), dtype=int)
+     array([0, 0, 0, 0, 0])
+               </pre> 
+          </p>
+          </div>
+
+     </div>
+
+     <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+     <p> 
+          <pre>
+     <span style="color: darkred;">>>></span> np.zeros((2, 1))
+     array([[ 0.],
+            [ 0.]])
+          </pre> 
+     </p>
+     </div>
+
+     <div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+          <p> 
+          <pre>
+     <span style="color: darkred;">>>></span> np.zeros((2,), dtype=[('x', 'i4'), ('y', 'i4')]) <i style="color: darkturquoise;"># custom dtype</i>
+     array([(0, 0), (0, 0)],
+          dtype=[('x', '&lti4'), ('y', '&lti4')])
+          </pre> 
+          </p>
+          </div>
+     </p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <h1 style="font: 100;font-family: 'Courier New', Courier, monospace;">numpy.sum</h1>
+     <p>
+          <span style="font-family: 'Courier New', Courier, monospace;">
+               numpy.sum(<i>a, axis=None, dtype=None, out=None, keepdims=&ltno value&gt, initial=&ltno value&gt, where=&ltno value&gt</i>)</span>
+          <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.sum.html?highlight=sum#numpy.sum"> Link to Documentation</a>
+     </p>
+     <p>
+          Sum of array elements over a given axis.
+     <pre>
+     Parameters:
+               a: <i>array_like</i>
+               axis: <i>None or int or tuple of ints, optional</i>
+               dtype: <i>dtype, optional</i>
+               out: <i>ndarray, optional</i>
+               keepdims: <i>bool, optional</i>
+               initial: <i>scalar, optional</i>
+               where: <i>array_like of bool, optional</i>
+     Returns:
+               sum_along_axis: <i>ndarray</i>
+     </pre>
+     </p>
+     <p>
+          Example: </br></br>
+<div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+<p> 
+<pre>
+     <span style="color: darkred;">>>></span> np.sum([0.5, 1.5])
+     2.0
+     <span style="color: darkred;">>>></span> np.sum([0.5, 0.7, 0.2, 1.5], dtype=np.int32)
+     1
+     <span style="color: darkred;">>>></span> np.sum([[0, 1], [0, 5]])
+     6
+     <span style="color: darkred;">>>></span> np.sum([[0, 1], [0, 5]], axis=0)
+     array([1, 5])
+</pre> 
+</p>
+</div>
+You can also start the sum with a value other than zero:
+<div style="background-color:dimgray;font-family: 'Courier New', Courier, monospace;"v>
+<p> 
+<pre>
+     <span style="color: darkred;">>>></span> np.sum([10], initial=5)
+     15
+</pre> 
+</p>
+</div>
+</p>
+
+</body>
+</html>

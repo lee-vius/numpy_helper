@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <h1 style="font: 100;font-family: 'Courier New', Courier, monospace;">numpy.mean</h1>
+     <p>
+          <span style="font-family: 'Courier New', Courier, monospace;">
+               numpy.mean(<i>a, axis=None, dtype=None, out=None, keepdims=&ltno value&gt</i>)</span>
+          <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html?highlight=mean#numpy.mean"> Link to Documentation</a>
+     </p>
+     <p>
+          Compute the arithmetic mean along the specified axis.
+     <pre>
+     Parameters:
+               a: <i>array_like</i>
+               axis: <i>None or int or tuple of ints, optional</i>
+               dtype: <i>dtype, optional</i>
+               out: <i>ndarray, optional</i>
+               keepdims: <i>bool, optional</i>
+     Returns:
+               m: <i>ndarray</i>
+     </pre>
+     </p>
+     <p>
+          Example: </br></br>
+<div style="background-color:dimgrey;font-family: 'Courier New', Courier, monospace;"v>
+<p> 
+<pre>
+     <span style="color: darkred;">>>></span> a = np.array([[1, 2], [3, 4]])
+     <span style="color: darkred;">>>></span> np.mean(a)
+     2.5
+     <span style="color: darkred;">>>></span> nnp.mean(a, axis=0)
+     array([2., 3.])
+     <span style="color: darkred;">>>></span> np.mean(a, axis=1)
+     array([1.5, 3.5])
+</pre> 
+</p>
+</div>
+In single precision, mean can be inaccurate:
+<div style="background-color:dimgrey;font-family: 'Courier New', Courier, monospace;"v>
+<p> 
+<pre>
+     <span style="color: darkred;">>>></span> a = np.zeros((2, 512*512), dtype=np.float32)
+     <span style="color: darkred;">>>></span> a[0, :] = 1.0
+     <span style="color: darkred;">>>></span> a[1, :] = 0.1
+     <span style="color: darkred;">>>></span> np.mean(a)
+     0.54999924
+</pre> 
+</p>
+</div>
+</p>
+
+</body>
+</html>
